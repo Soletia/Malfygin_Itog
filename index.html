@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Преподаватель</title>
+    <script>
+    let tech = {
+        surname: 'Михеева',
+        name: 'Татьяна',
+        patronymic: 'Александровна',
+        ocupation: 'Преподаватель специальных дисциплин',
+        degree: 'Высшее',
+        education: 'Московский государственный институт электронной техники (технический университет)',
+        qualification: 'Инженер-программист инфокоммуникационных систем',
+        specialty: 'Программное обеспечение радиоэлектронных систем',
+        discipline: ['Основы алгоритмизации и программирования', 'Компьютерная графика'],
+        // category: prompt('Категория преподавателя:', ''),
+        // experience: prompt('Стаж работы:', ' '),
+        // email: prompt('E-mail:', ''),
+        // site: prompt('Персональный сайт:', '')
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <ol>
+            <li><a href="">О проекте</a></li>
+            <li><a href="">Курсы</a></li>
+            <li><a href="">Преподаватели</a></li>
+            <li><a href="">Контакты</a></li>
+        </ol>
+    </header>
+                <div class="middle">
+                    <img src="no-image.jpg">
+                        <section class="info">
+                            <script>
+                                let itog = `
+                                    <h1> ${tech.surname} <br> ${tech.name} ${tech.patronymic} </h1>
+                                    <h2> ${tech.ocupation} </h2></p>
+                                    <hr>
+                                    <h3>Основная информация:</h3>
+                                        <ul>
+                                            <li><b>Уровень образования: ${tech.degree}</b></li>
+                                            <li><b>Образование: ${tech.education}</b></li>
+                                            <li><b>Квалификация: ${tech.qualification}</b></li>
+                                            <li><b>Специализация: ${tech.specialty}</b></li>
+                                            <li><b>Преподаваемые дисциплины:</b></li>
+                                            <ul class= "ul">
+                                                <li><b>${tech.discipline[0]}</b></li>
+                                                <li><b>${tech.discipline[1]}</b></li>
+                                            </ul>
+                                        </ul>
+                                    </p>
+                                    <h3>Дополнительная информация:</h3>
+                                        <ul>
+                                            <li><b>Категория: ${tech.category}</b></li>
+                                            <li><b>Стаж: ${tech.experience}</b></li>
+                                            <li><b>E-mail: ${tech.email}</b></li>
+                                            <li><b>Персональный сайт: ${tech.site}</b></li>
+                                        </ul>
+                                    </p>
+                                `;
+                                document.write(itog);
+                            </script>
+                        </section>
+                </div>
+</body>
+</html>
