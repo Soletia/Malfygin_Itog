@@ -16,10 +16,12 @@
         qualification: 'Инженер-программист инфокоммуникационных систем',
         specialty: 'Программное обеспечение радиоэлектронных систем',
         discipline: ['Основы алгоритмизации и программирования', 'Компьютерная графика'],
-        // category: prompt('Категория преподавателя:', ''),
-        // experience: prompt('Стаж работы:', ' '),
-        // email: prompt('E-mail:', ''),
-        // site: prompt('Персональный сайт:', '')
+        category: prompt('Категория преподавателя:', ''),
+        experience: prompt('Стаж работы:', ' '),
+        email: prompt('E-mail:', ''),
+        site: prompt('Персональный сайт:', ''),
+        discipline: prompt('Дисциплины', ''),
+        discipline1: prompt('Дисциплины', '')
     }
     </script>
 </head>
@@ -48,8 +50,8 @@
                                             <li><b>Специализация: ${tech.specialty}</b></li>
                                             <li><b>Преподаваемые дисциплины:</b></li>
                                             <ul class= "ul">
-                                                <li><b>${tech.discipline[0]}</b></li>
-                                                <li><b>${tech.discipline[1]}</b></li>
+                                                <li><b>${tech.discipline}</b></li>
+                                                <li><b>${tech.discipline1}</b></li>
                                             </ul>
                                         </ul>
                                     </p>
